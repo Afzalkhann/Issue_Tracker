@@ -5,6 +5,8 @@ const router=express.Router()
 const homeController=require('../controllers/home')
 
 router.get('/',homeController.home)
+router.use('/project',require('./project'))
+router.use('/issue',require('./issue'))
 
 
 

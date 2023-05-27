@@ -4,9 +4,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/home.css">
     <title>Issue Tracker</title>
 </head>
 <body>
     this is home page
+    
+    <form action="/project/create" method="post">
+        <h3>Create Projects</h3>
+        
+        <label > Name</label>
+        <input type="text" name="name">
+        
+        <label for="">Description</label>
+        <textarea name="description"  cols="30" rows="1"></textarea>
+        
+        
+        <label for="">Author</label>
+        <input type="text" name="author">
+        
+        
+        <input type="submit" value="Create" name="Create">
+        
+        
+    </form>
+    
+    <div id="list-conatiner">
+        
+        <%for(project of projects){%>
+            <div id="sub-div">
+                <a href="/project/profile/?project=<%=project.id%>">
+                    <img src="img/SC-Project-Icon.png" alt="project image">
+                </a>
+                <p><%=project.name%></p>
+            </div>
+        <%}%>
+        
+        </div>
+    </div>
 </body>
 </html>

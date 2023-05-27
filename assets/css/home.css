@@ -1,0 +1,39 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+form{
+    width: 20vw;
+    height: 40vh;
+    border-top: 15px solid #5fec89;
+    border-bottom: 15px solid #5fec89;
+    border-left: 2px solid #eaec5f;
+    border-right: 2px solid #eaec5f;
+    border-radius: 15%;
+    padding: 8px;
+    margin-left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: space-between;
+}
+#list-conatiner{
+    border: 2px solid black;
+    width: 90vw;
+    margin-top: 30px;
+    display: flex;
+    margin-left: 50%;
+    transform: translate(-50%);
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+img{
+    width: 100px;
+    height: 100px;
+}
+
