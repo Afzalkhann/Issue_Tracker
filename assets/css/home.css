@@ -2,8 +2,19 @@ body{
     margin: 0;
     padding: 0;
 }
-
+#header{
+    margin: 0;
+    height: 9vh;
+    background-color: rgb(60, 205, 205);
+    color:black;
+}
+#header h1{
+    text-align: center;
+    display: inline;
+    
+}
 form{
+    margin-top: 10px;
     width: 20vw;
     height: 40vh;
     border-top: 15px solid #5fec89;
@@ -28,12 +39,19 @@ form{
     transform: translate(-50%);
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: space-between;
 
+}
+#sub-div{
+    align-items: center;
+    text-align: center;
 }
 
 img{
     width: 100px;
     height: 100px;
+    margin: 0;
+    margin-bottom: 1px;
 }
 

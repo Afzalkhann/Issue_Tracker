@@ -3,7 +3,7 @@ const Project=require('../models/project');
 
 module.exports.create=async function(req,res){
     try{
-        let project=await Project.findOne(req.params.project)
+        let project=await Project.findById(req.query.project)
         if(project){
             var issue=await Issue.create({
                 title: req.body.title,

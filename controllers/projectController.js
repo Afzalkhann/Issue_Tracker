@@ -3,7 +3,8 @@ const Issue=require('../models/issues')
 const mongoose=require('mongoose')
 module.exports.profile = async function(req, res){
     try{
-        let project= await Project.findOne(req.params.project)
+        console.log(req.query.project)
+        let project= await Project.findById(req.query.project)
         .populate('issues')
         console.log(project)
                 return res.render('project', {

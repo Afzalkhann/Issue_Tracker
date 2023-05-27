@@ -8,7 +8,10 @@
     <title>Issue Tracker</title>
 </head>
 <body>
-    this is home page
+    <div id="header">
+        <h1>Issue Tracker</h1>
+        
+    </div>
     
     <form action="/project/create" method="post">
         <h3>Create Projects</h3>
@@ -28,15 +31,15 @@
         
         
     </form>
-    
+    <h2 style="text-align: center;">Projects</h2>
     <div id="list-conatiner">
         
-        <%for(project of projects){%>
+        <%for(let project of projects){%>
             <div id="sub-div">
                 <a href="/project/profile/?project=<%=project.id%>">
                     <img src="img/SC-Project-Icon.png" alt="project image">
                 </a>
-                <p><%=project.name%></p>
+                <h3><%=project.name%></h3>
             </div>
         <%}%>
         
