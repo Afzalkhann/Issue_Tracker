@@ -1,6 +1,8 @@
 const Issue=require('../models/issues');
 const Project=require('../models/project');
+//
 
+//to create new issue
 module.exports.create=async function(req,res){
     try{
         let project=await Project.findById(req.query.project)
